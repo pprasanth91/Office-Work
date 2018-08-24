@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Flipkart]">
+  <listeners>
+    <listener class-name="Listener_Practice.MyTransformer"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="Listener_Practice.Flipkart_Search">
+        <methods>
+          <include name="browser_Invoke"/>
+          <include name="Close_Browser"/>
+          <include name="Read_Excel"/>
+        </methods>
+      </class> <!-- Listener_Practice.Flipkart_Search -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Flipkart] -->
